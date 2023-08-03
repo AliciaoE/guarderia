@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link,Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import TarifasHorarios from './components/TarifasHorarios';
 import ContactaNosotros from './components/ContactaNosotros';
 import Footer from './components/Footer';
@@ -35,11 +35,10 @@ function App() {
 
       <Routes>
         {/* Configurar la ruta para el componente Inicio */}
+        <Route path="/guarderia" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/tarifas-horarios" element={<TarifasHorarios />} />
         <Route path="/contacta-nosotros" element={<ContactaNosotros />} />
-        {/* Redirigir a /inicio cuando se accede a la ruta principal */}
-        <Route path="/*" element={<Navigate to="/inicio" />} />
       </Routes>
 
       <Footer />
