@@ -34,10 +34,8 @@ function App() {
       </div>
 
       <Routes>
-        {/* Ruta para la página principal */}
+      
         <Route path="/" element={<Inicio />} />
-        {/* Ruta adicional para el componente Inicio */}
-        <Route path="/inicio" element={<Inicio />} />
         <Route path="/tarifas-horarios" element={<TarifasHorarios />} />
         <Route path="/contacta-nosotros" element={<ContactaNosotros />} />
       </Routes>
