@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import TarifasHorarios from './components/TarifasHorarios';
 import ContactaNosotros from './components/ContactaNosotros';
 import Footer from './components/Footer';
@@ -20,7 +20,7 @@ function App() {
             <ul className="nav-links">
               {/* Agregar una ruta específica para el componente Inicio */}
               <li>
-                <Link to="/inicio"> Inicio</Link>
+                <Link to="/inicio">Inicio</Link>
               </li>
               <li>
                 <Link to="/tarifas-horarios">Tarifas y horarios</Link>
@@ -34,8 +34,9 @@ function App() {
       </div>
 
       <Routes>
-      
-        <Route path="/" element={<Inicio />} />
+        {/* Redirigir a Inicio cuando se accede a la ruta principal */}
+        <Route path="/" element={<Navigate to="/inicio" />} />
+        <Route path="/inicio" element={<Inicio />} />
         <Route path="/tarifas-horarios" element={<TarifasHorarios />} />
         <Route path="/contacta-nosotros" element={<ContactaNosotros />} />
       </Routes>
