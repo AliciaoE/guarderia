@@ -9,7 +9,7 @@ import './Styles.css'; // Importa el archivo CSS
 
 function App() {
   return (
-    <Router>
+    <Router basename="/guarderia"> {/* Añade el basename aquí */}
       <div className="app-container">
         <header className="header-container">
           <div className="logo-container">
@@ -35,7 +35,7 @@ function App() {
 
       <Routes>
         {/* Configurar la ruta para el componente Inicio */}
-        <Route path="/guarderia" element={<Inicio />} />
+        <Route path="/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/tarifas-horarios" element={<TarifasHorarios />} />
         <Route path="/contacta-nosotros" element={<ContactaNosotros />} />
