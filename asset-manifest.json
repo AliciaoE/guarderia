@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/guarderia/static/css/main.fc7050f1.css",
+    "main.css": "/guarderia/static/css/main.369d2293.css",
     "main.js": "/guarderia/static/js/main.f9f95f6e.js",
     "static/js/787.d459f3de.chunk.js": "/guarderia/static/js/787.d459f3de.chunk.js",
     "static/media/Fondo virtual para Zoom Acuarela Original Aesthetic Pastel (1).png": "/guarderia/static/media/Fondo virtual para Zoom Acuarela Original Aesthetic Pastel (1).ff585321312323b39c96.png",
@@ -10,12 +10,12 @@
     "static/media/imagen1.jpg": "/guarderia/static/media/imagen1.93856a7e4f8e708fc59f.jpg",
     "static/media/logo.png": "/guarderia/static/media/logo.5b50700c0f7b4778f0a7.png",
     "index.html": "/guarderia/index.html",
-    "main.fc7050f1.css.map": "/guarderia/static/css/main.fc7050f1.css.map",
+    "main.369d2293.css.map": "/guarderia/static/css/main.369d2293.css.map",
     "main.f9f95f6e.js.map": "/guarderia/static/js/main.f9f95f6e.js.map",
     "787.d459f3de.chunk.js.map": "/guarderia/static/js/787.d459f3de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc7050f1.css",
+    "static/css/main.369d2293.css",
     "static/js/main.f9f95f6e.js"
   ]
 }
