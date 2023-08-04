@@ -1,101 +1,102 @@
- @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+/* Estilos globales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-image: url(assets/Fondo\ virtual\ para\ Zoom\ Acuarela\ Original\ Aesthetic\ Pastel\ \(1\).png);
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px;
 }
 
 .logo {
-  width: 250px; /* Tamaño deseado para el logo ( */
-margin-left: 50px;
+  width: 250px;
 }
 
+/* Estilos para el menú de navegación */
 .nav-links {
   display: flex;
   list-style: none;
 }
-
-.nav-links li {
-  margin-left: 70px; /* Espacio entre los enlaces */
-  background-color: #9ae39a;
-}
-
 nav li a {
-  color: #0e0e0e; /* Color del texto */
-  background-color: #008000;
+  display: inline-block;
+  color: #0e0e0e;
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Comic Sans MS', cursive; /* Fuente divertida */
-  font-family: 'Comic Sans MS', cursive; /* Fuente divertida */
-  background-color: transparent; /* Fondo transparente por defecto */
-  padding: 10px; /* Espacio alrededor del texto para el área de interacción */
-  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  font-family: 'Comic Sans MS', cursive;
+  padding: 20px 20px; /* Ajusta el espaciado dentro del botón */
+  border-radius: 30px; /* Ajusta el radio de los bordes para darle forma de botón */
+  background-color: #008000;
+  transition: background-color 0.3s;
+  margin-right: 20px;
 }
+
+
 nav li a:hover {
-  background-color: #ffcc00; /* Color de fondo cuando el ratón está encima */
+  background-color: #ffcc00;
 }
 
 /* Estilo para el pie de página (Footer) */
 footer {
-  background-color: #ffcc00; /* Fondo amarillo */
+  background-color: #ffcc00;
   padding: 10px;
   text-align: center;
   font-size: 12px;
-  font-family: 'Comic Sans MS', cursive; /* Fuente divertida */
+  font-family: 'Comic Sans MS', cursive;
 }
 
-/* Ajuste para acercar el navegador al logo */
-nav {
-  margin-right: 500px; /* Puedes ajustar el valor según lo necesites para acercar el navegador */
+/* Estilo para el contenedor principal */
+.content {
+  padding: 20px;
 }
-/* formulario Contacta con nosotros*/
+
+/* Estilo para el formulario Contacta con nosotros */
 .ContactForm-container {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 200px; /* Ajusta el espaciado del contenedor del formulario */
+  padding: 20px;
   background-color: #e1d5d5;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(200, 202, 210, 0.998);
   margin-top: 40px;
-  margin-bottom: 60px ;
+  margin-bottom: 60px;
 }
 
 /* Estilos para el título del formulario */
 .ContactForm-title {
   font-size: 24px;
   font-weight: bold;
-  margin-top: -160px;
-  margin-bottom: 40px; /* Ajusta el espaciado del título */
+  margin-bottom: 10px;
   color: #333;
 }
 
-
 /* Estilo para el contenedor de las imágenes */
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  margin-top: 80px;
-  margin-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
-
-
 
 /* Estilos para las imágenes */
 .image-container img {
-  width: auto; /* Ajusta el tamaño de las imágenes según sea necesario */
-  margin: 10px;
-  margin-top: -50px;
-  background-color: #008000;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
+
+/* Estilos para la sección de inicio */
 .inicio-container {
   padding: 20px;
   background-color: #f9f4f46d;
@@ -105,137 +106,62 @@ nav {
   font-family: "Borel";
   font-size: 22px;
   line-height: 1.6;
-  margin-bottom: 15px;
   color: #080808;
   text-align: center;
   padding: 60px;
   margin-top: -50px;
-  padding: 15px;
-  margin-top: 0;
 }
+
 .paragraph {
-  text-align: center;
+  text-align: left;
   color: #040404;
   padding: 15px;
-  margin-top: 0;
-  margin-left: 0px; /* Ajusta el valor negativo para mover el texto hacia la izquierda */
   background-color: #f0b54786;
-  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .paragraph2 {
   color: #080808;
   padding: 15px;
-  margin-top: 0;
-  margin-left: -0px; /* Ajusta el valor negativo para mover el texto hacia la izquierda */
   background-color: #1ce69586;
-  text-align: left; /* Alinea el texto a la izquierda */
 }
+
 .paragraph3 {
   color: #050505;
   padding: 15px;
-  margin-top: 0;
-  margin-left: 0px; /* Ajusta el valor negativo para mover el texto hacia la izquierda */
   background-color: #ed8acf86;
-  text-align: left; /* Alinea el texto a la izquierda */
-  
 }
+
 .paragraph4 {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
-  
-  
-}
-/* Estilo para el contenedor principal */
-.TarifasHorarios-container {
-  font-family: "Borel";
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
-/* Estilos para los títulos */
-.TarifasHorarios-container h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
+/* Media query para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
 
-.TarifasHorarios-container h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  color: #333;
-}
+  .nav-links {
+    margin-right: 0;
+    margin-top: 20px;
+  }
 
-/* Estilos para los párrafos */
-.TarifasHorarios-container p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  color: #080808;
-}
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 
-/* Estilos para la lista */
-.TarifasHorarios-container ul {
-  font-size: 16px;
-  line-height: 1.6;
-  list-style-type: square;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
+  .image-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
+  .ContactForm-container {
+    padding: 10px;
+  }
 
-.TarifasHorarios-container li {
-  color: #f06e37; /* Color naranja para resaltar los precios */
-  font-weight: bold;
+  .text-container {
+    padding: 30px;
+  }
 }
-
-/* Estilos para los descuentos y programas de apoyo */
-.TarifasHorarios-container p.special-offers {
-  font-style: italic;
-  color: #008000; /* Color verde para resaltar los descuentos y programas de apoyo */
-}
-/* Establecer el tamaño de fuente base para toda la página */
-html {
-  font-size: 16px;
-}
-
-/* Estilo para el contenedor principal */
-.TarifasHorarios-container {
-  font-family: "Borel";
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Estilos para los párrafos */
-.TarifasHorarios-container p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  color: #080808;
-}
-
-/* Estilos para la lista */
-.TarifasHorarios-container ul {
-  font-size: 16px;
-  line-height: 1.6;
-  list-style-type: square;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-/* Estilos para los descuentos y programas de apoyo */
-.TarifasHorarios-container p.special-offers {
-  font-style: italic;
-  color: #008000; /* Color verde para resaltar los descuentos y programas de apoyo */
-}
-
-/* Estilos para las imágenes */
-.image-container img {
-  width: 250px; /* Tamaño de las imágenes por defecto */
-}
-
-/* Resto de estilos, fuera de las reglas @media */

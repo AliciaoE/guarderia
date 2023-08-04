@@ -1,7 +1,6 @@
 import React from 'react';
 import imagen1 from "../assets/imagen1.jpg";
 import imagen2 from "../assets/imagen2.jpg";
-import imagen3 from "../assets/imagen3.jpg";
 import imagen4 from "../assets/imagen4.jpg";
 import imagen5 from "../assets/imagen5.jpg";
 
@@ -16,7 +15,6 @@ const Inicio = () => {
         <div className="image-container">
         <img src={imagen1} alt="imagen1" />
         <img src={imagen2} alt="imagen2" />
-        <img src={imagen3} alt="imagen3" />
         <img src={imagen4} alt="imagen4" />
         <img src={imagen5} alt="imagen5" />
       </div>
